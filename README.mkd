@@ -1,0 +1,7 @@
+# Random Image Menu
+
+Selects an image (of the following formats: `.jpg`, `.png`, `.gif`) from a directory and displays it in a menu item.
+
+## Configuration
+
+Open `randimg_menu.php` to customize the image height and width. This will **not** be getting a configuration page.
