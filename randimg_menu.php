@@ -11,8 +11,10 @@ foreach(glob("{".RIMID."*.jpg,".RIMID."*.gif,".RIMID."*.png}", GLOB_BRACE) as $i
 	array_push($images, str_replace(RIMID, "", $image_file));
 }
 
-if(!empty($images[array_rand($images)])){
-	$text = "<a href='".RIMID.$images[array_rand($images)]."'><img src='".RIMID.$images[array_rand($images)]."' style='width:".$width."; height:".$height."; border:0;'></a>";
+$image = $images[array_rand($images)];
+
+if(!empty($image)){
+	$text = "<a href='".RIMID.$image."'><img src='".RIMID.$image."' style='width:".$width."; height:".$height."; border:0;'></a>";
 }else{
 	$text = "No images found. Add some to the images directory!";
 }
